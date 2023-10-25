@@ -1,7 +1,7 @@
-/bases-node/
+/bases-node/*
 /fundamentos-js/
-/app-tareas/
-/app-clima/
+/app-tareas/*
+/app-clima/*
 
 # Estos archivos si se conservan
 !**/README.md
@@ -9,3 +9,4 @@
 # archivos de node
 /node_modules/
 package-lock.json
+
