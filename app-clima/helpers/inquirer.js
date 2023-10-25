@@ -15,12 +15,14 @@ const questions = [
 	},
 ];
 
-const inquirerMenu = async () => {
-	//console.clear();
+const showHeader = () => {
 	console.log("==============================".green);
 	console.log("    Seleccione una opción".white);
 	console.log("==============================".green);
+}
 
+const inquirerMenu = async () => {
+	showHeader();
 	const { opt } = await inquirer.prompt(questions);
 
 	return opt;
@@ -140,4 +142,5 @@ module.exports = {
 	readInput,
 	deleteTaskMenu,
 	completeTasksList,
+    showHeader,
 };

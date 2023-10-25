@@ -25,6 +25,10 @@ class Searchs {
     get getHistory() {
         return this.history
     }
+
+    async city(name = '') {
+        // TODO search the city in the database
+    }
 }
 
 module.exports = Searchs;
