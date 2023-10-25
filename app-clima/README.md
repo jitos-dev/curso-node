@@ -1,5 +1,13 @@
 # APP DEL TIEMPO
 
+
+## Lanzar la aplicación
+
+```
+npm start
+```
+Este comando lanza la aplicación...
+
 ## Librerias que se utilizan en la aplicación
 * **Inquirer:** Para crear aplicaciones de consola
 * **Colors:** Para cambiar los colores del texto de la salida de consola
