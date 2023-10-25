@@ -1,7 +1,6 @@
 /bases-node/*
 /fundamentos-js/
 /app-tareas/*
-/app-clima/*
 
 # Estos archivos si se conservan
 #!**/README.md
