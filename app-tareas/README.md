@@ -11,9 +11,9 @@ Este comando lanza la aplicación y carga las tareas que se encuentren en db/dat
 
 
 ## Librerias que se utilizan en la aplicación
-* **Inquirer:** Para crear aplicaciones de consola
-* **Colors:** Para cambiar los colores del texto de la salida de consola
-* **uuid:** Para generar ids únicos y aleatorios
+* **[Inquirer](https://www.npmjs.com/package/inquirer) :** Para crear aplicaciones de consola
+* **[Colors](https://www.npmjs.com/package/colors) :** Para cambiar los colores del texto de la salida de consola
+* **[uuid](https://www.npmjs.com/package/uuid) :** Para generar ids únicos y aleatorios
 
 
 

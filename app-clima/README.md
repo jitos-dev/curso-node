@@ -9,8 +9,8 @@ npm start
 Este comando lanza la aplicación...
 
 ## Librerias que se utilizan en la aplicación
-* **Inquirer:** Para crear aplicaciones de consola
-* **Colors:** Para cambiar los colores del texto de la salida de consola
+* **[Inquirer](https://www.npmjs.com/package/inquirer) :** Para crear aplicaciones de consola
+* **[Colors](https://www.npmjs.com/package/colors) :** Para cambiar los colores del texto de la salida de consola
 
 ## Trabajar con Inquirer
 Inquirer es una librería para hacer aplicaciones de consola que trae muchas opciones y
