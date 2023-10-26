@@ -21,4 +21,4 @@ class HttpService {
     }
 }
 
-module.exports = HttpService;
+module.exports = new HttpService();

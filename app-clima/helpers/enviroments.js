@@ -1,4 +1,4 @@
-const dotenv = require("dotenv").config();
+require("dotenv").config();
 
 const setBoolean = (value, defaultValue = false) => {
 	return ["true", "false"].includes(value) ? JSON.parse(value) : defaultValue;
