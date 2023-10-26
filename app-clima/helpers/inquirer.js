@@ -64,6 +64,29 @@ const readInput = async (message) => {
 	return option;
 };
 
+const menuCities = async (cities = []) => {
+	const choices = cities.map((city, index) => {
+		return {
+			value: city.place_id,
+			name: `${(index + 1).toString().green}: ${city.display_name}`
+		}
+	})
+
+	const input = [
+		{
+			type: 'list',
+			name: 'city',
+			message: 'Escoja una opción',
+			choices
+		}
+	]
+
+	const {city} = await inquirer.prompt(input);
+
+	return city;
+}
+
+
 const deleteTaskMenu = async (tasks = []) => {
 	if (tasks.length === 0) {
 		console.log("No hay tareas para borrar".red);
@@ -140,7 +163,6 @@ module.exports = {
 	inquirerMenu,
 	chooseOption,
 	readInput,
-	deleteTaskMenu,
-	completeTasksList,
     showHeader,
+	menuCities,
 };
