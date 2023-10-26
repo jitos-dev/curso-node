@@ -7,6 +7,7 @@
  */
 class Searchs {
 	history = [];
+    cities = [];
 
 	constructor() {
         //Check if it is the instance to return it
@@ -18,17 +19,29 @@ class Searchs {
 		Searchs.instance = this;
 	}
 
-    set setHistory(history = '') {
-        this.history.push(history)
+    set setHistory(history = {}) {
+        if (this.history.length === 5) {
+            this.history.pop(); //elimina el último elemento del array
+        }
+
+        this.history.unshift(history) //agregamos al principio
     }
 
     get getHistory() {
         return this.history
     }
 
-    async city(name = '') {
-        // TODO search the city in the database
+    set setCities(history = {}) {
+        this.cities.push(history)
     }
+
+    get getCities() {
+        return this.cities
+    }
+
+    // getCityById(id = 0) {
+    //     return this.history.find(city => city.place_id = id)
+    // }
 }
 
 module.exports = Searchs;
