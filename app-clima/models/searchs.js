@@ -19,7 +19,13 @@ class Searchs {
 		Searchs.instance = this;
 	}
 
-    set setHistory(history = {}) {
+    set setHistory(search = {}) {
+        // remove duplicated objects
+        this.history = this.history.filter(city => {
+            city.place_id !== search.place_id
+        })
+
+        // just five elements in the array
         if (this.history.length === 5) {
             this.history.pop(); //elimina el último elemento del array
         }
