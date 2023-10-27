@@ -19,10 +19,12 @@ class Searchs {
 		Searchs.instance = this;
 	}
 
-    set setHistory(search = {}) {
+    set setHistory(search) {
         // remove duplicated objects
         this.history = this.history.filter(city => {
-            city.place_id !== search.place_id
+            console.log('city: ', city.place_id);
+            console.log('search ', search.place_id);
+            return city.place_id !== search.place_id
         })
 
         // just five elements in the array
@@ -37,7 +39,7 @@ class Searchs {
         return this.history
     }
 
-    set setCities(history = {}) {
+    set setCities(history) {
         this.cities.push(history)
     }
 

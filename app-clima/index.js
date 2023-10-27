@@ -62,9 +62,6 @@ const main = async () => {
 				const id = await menuCities(data);
 				const city = data.find((city) => city.place_id === id);
 
-				// add the city to the history
-				searchs.setHistory = city;
-
 				// show the result
 				search.showSearch(city);
 
@@ -76,11 +73,10 @@ const main = async () => {
 				console.log();
 
 				// save the search in the history
-				searchs.setCities = city
+				searchs.setHistory = city;
 				break;
 
 			case 2:
-				//todo comprobar porque elimina la primera aunque no sean iguales las ciudades
 				searchs.getHistory.forEach(city => {
 					console.log({city});
 				})
