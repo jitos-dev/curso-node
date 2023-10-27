@@ -6,6 +6,7 @@ const {
 	menuCities,
 } = require("./helpers/inquirer");
 const Searchs = require("./models/searchs");
+const Weather = require('./models/weather')
 const search = require("./models/search");
 const requestService = require("./services/request.service");
 const { cities } = require("./services/search.service");
@@ -32,6 +33,8 @@ const main = async () => {
 				// Option chosen by user
 				const nameCity = await readInput("Ciudad: ");
 
+				if (nameCity === '') continue;
+
 				// we get the city data and the response code
 				const { data, status } = await requestService.getLocation(
 					nameCity
@@ -43,7 +46,7 @@ const main = async () => {
 						"Ha ocurrido un error al obtener los datos de localización de la ciudad"
 					);
 					continue;
-				} else if (status === 404) {
+				} else if (status === 404 || data.length === 0) {
 					console.log(
 						"No se han encontrado resultados con los datos introducidos"
 					);
@@ -54,13 +57,17 @@ const main = async () => {
 				const id = await menuCities(data);
 				const city = data.find((city) => city.place_id === id);
 
-				console.log({city});
-
 				// add the city to the history
 				searchs.setHistory = city;
 
 				// show the result
 				search.showSearch(city);
+
+				// Get weather data and show results
+				const result = await requestService.getWeather(city)
+				
+				const weather = Weather.of(result);
+				weather.showWeather();
 				console.log();
 				break;
 
