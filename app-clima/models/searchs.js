@@ -30,7 +30,7 @@ class Searchs {
             this.history.pop(); //elimina el último elemento del array
         }
 
-        this.history.unshift(history) //agregamos al principio
+        this.history.unshift(search) //agregamos al principio
     }
 
     get getHistory() {

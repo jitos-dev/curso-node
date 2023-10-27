@@ -5,6 +5,7 @@ const {
 	showHeader,
 	menuCities,
 } = require("./helpers/inquirer");
+const { readFile, writeFile } = require('./helpers/writeReadFile')
 const Searchs = require("./models/searchs");
 const Weather = require('./models/weather')
 const search = require("./models/search");
@@ -14,6 +15,9 @@ require("colors");
 
 const main = async () => {
 	const searchs = new Searchs();
+	const history = readFile()
+	searchs.history = history;
+
 	let opt = 0;
 	console.clear();
 
@@ -40,6 +44,7 @@ const main = async () => {
 					nameCity
 				);
 
+				//todo opción de que si no quiere ninguna pueda salir sin elegir ciudad
 				//if an error has occurred
 				if (status === 500) {
 					console.log(
@@ -69,9 +74,16 @@ const main = async () => {
 				const weather = Weather.of(result);
 				weather.showWeather();
 				console.log();
+
+				// save the search in the history
+				searchs.setCities = city
 				break;
 
 			case 2:
+				//todo comprobar porque elimina la primera aunque no sean iguales las ciudades
+				searchs.getHistory.forEach(city => {
+					console.log({city});
+				})
 				break;
 
 			case 0:
