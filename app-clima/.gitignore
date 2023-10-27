@@ -1,5 +1,8 @@
 /node_modules/
 package-lock.json
 
+# JSON file to save search history
+db/*
+!db/.gitkeep
 
 .env
