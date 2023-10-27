@@ -13,6 +13,7 @@ const env = {
 	openWeatherKey: process.env.OPENWEATHER_KEY,
 	openWeatherUrl: process.env.OPENWEATHER_URL,
 	openWeatherLanguage: process.env.OPENWEATHER_LANGUAGE,
+	openWeatherFiveDaysThreeHoursUrl: process.env.OPENWEATHER__FIVE_DAYS_THREE_HOURS_URL,
 };
 
 module.exports = env;
