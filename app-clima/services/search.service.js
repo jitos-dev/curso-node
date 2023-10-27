@@ -4,8 +4,6 @@
 class SearchService {
     cities = []
 
-    constructor() {}
-
     constructor(data = []) {
         this.cities = data
     }

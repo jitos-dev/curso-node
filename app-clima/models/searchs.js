@@ -38,10 +38,6 @@ class Searchs {
     get getCities() {
         return this.cities
     }
-
-    // getCityById(id = 0) {
-    //     return this.history.find(city => city.place_id = id)
-    // }
 }
 
 module.exports = Searchs;
