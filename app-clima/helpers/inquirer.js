@@ -72,6 +72,11 @@ const menuCities = async (cities = []) => {
 		}
 	})
 
+	choices.unshift({
+		value: 0,
+		name: '0: '.green + 'Salir sin seleccionar ciudad'
+	})
+
 	const input = [
 		{
 			type: 'list',
