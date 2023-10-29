@@ -13,7 +13,8 @@ const readFile = () => {
 }
 
 const writeFile = (data) => {
-    fs.writeFileSync(urlData, data)
+    const strData = JSON.stringify(data)
+    fs.writeFileSync(urlData, strData)
 }
 
 module.exports = { readFile, writeFile }

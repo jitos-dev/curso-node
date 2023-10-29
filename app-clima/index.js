@@ -77,9 +77,11 @@ const main = async () => {
 				break;
 
 			case 2:
+				console.log();
 				searchs.getHistory.forEach(city => {
-					console.log({city});
+					console.log('Ciudad: '.green, city.display_name);
 				})
+				console.log();
 				break;
 
 			case 0:
@@ -87,7 +89,10 @@ const main = async () => {
 
 				if (!exit) {
 					opt = 1;
+				} else {
+					writeFile(searchs.getHistory)
 				}
+
 				break;
 		}
 
