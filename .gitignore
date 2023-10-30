@@ -3,7 +3,7 @@
 /fundamentos-js/
 /app-tareas/*
 /app-clima/*
-/web-server/*
+#/web-server/*
 
 # Archivos que si se conservan de los proyectos
 # Solo se conservan los README de las carpetas centrales de los proyectos, el resto no
