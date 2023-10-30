@@ -26,4 +26,29 @@ Si la tenmos instalada de forma global y de forma local podemos lanzar una u otr
 * **[Colors](https://www.npmjs.com/package/colors) :** Para cambiar los colores del texto de la salida de consola
 * **[Express](https://www.npmjs.com/package/express) :** Librería más utilizada para crear un servidor http al que hacer peticiones.
 * **[Dotenv](https://www.npmjs.com/package/dotenv) :** Librería para cargar variables de entorno de un archivo .env
+* **[Handlebars](https://www.npmjs.com/package/handlebars) :** Librería para renderizar contenido dinámico. Hace algo parecido a Angular usando dobles llaves {{}} para insertar el código. Se utiliza para casos concretos en que es poco contenido o sencillo, si es más complejo es mejor utilizar Angular.
+
+### Como utilizar la librería Handlebars
+
+Para utilizar esta librería, si estamos utilizando solo JavaScript (sin express) la instalamos con
+
+```
+npm i handlebars
+```
+
+Si estamos utilizando Express hay que utilizar un adaptador que es **[hbs](https://www.npmjs.com/package/hbs)**. Lo instalamos con
+
+```
+npm i hbs
+```
+
+De esta forma se instala Handlebars y su adaptador para poder utilizarla con Express.
+
+#### Consideraciones a tener en cuenta
+* Para cargar una vista con Handlebars tiene que encontrarse en la raíz del proyecto en una carpeta que se llame 'views' que es la carpeta por defecto donde va a buscar las vistas (se puede cambiar).
+
+* Los archivos de las vistas en la carpeta 'views' tienen que tener la extensión .hbs
+
+* 
+
 
