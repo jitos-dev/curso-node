@@ -3,6 +3,7 @@
 /fundamentos-js/
 /app-tareas/*
 /app-clima/*
+/web-server/*
 
 # Estos archivos si se conservan
 #!**/README.md
