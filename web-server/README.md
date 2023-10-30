@@ -5,9 +5,9 @@ Esta es una app para crear un servidor http. Para ello se utiliza la librería *
 ## Lanzar la aplicación
 
 ```
-npm start
+npm run dev
 ```
-Este comando lanza la aplicación según la definición del comando en el archivo package.json que lanza el comando
+Este comando lanza la aplicación según la definición del comando en el archivo package.json que lanza el comando:
 
 ```
 npx nodemon app.js
