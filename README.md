@@ -35,7 +35,7 @@ Esta es una aplicación de consola para registrar tareas. Esta hecha con [Inquir
 
 En la aplicación se pueden registrar tareas, ver las tareas existentes, marcarlas como completadas o no completadas...
 
-Para más información ver README del proyecto.
+Para más información ver [README](./app-tareas/README.md) del proyecto.
 
 
 ## App-clima
@@ -44,7 +44,7 @@ Esta es una aplicación de consola hecha con Inquirer que nos ayuda a hacer este
 
 Para obtener los datos se hacen llamadas a dos apis externas que son **LocationIQ** y **OpenWeather** utilizando la librería **Axios** para realizar las peticiones. 
 
-Para más información ver README del proyecto.
+Para más información ver [README](./app-clima/README.md) del proyecto.
 
 ## Web-server
 
