@@ -49,6 +49,22 @@ De esta forma se instala Handlebars y su adaptador para poder utilizarla con Exp
 
 * Los archivos de las vistas en la carpeta 'views' tienen que tener la extensión .hbs
 
-* 
+### Utilizando parciales
+Los parciales son templates que utilizamos para renderizar partes de nuestro código reutilizables en las distintas páginas como por ejemplo el footer, header, nav...
 
+Para hacer esto en la carpeta 'views' se crea otra carpeta que llamo 'partials' (puede tener cualquier nombre) y dentro de esta los 'partials' que queramos que para este caso serán footer.hbs, header.hbs y navbar.hbs. Luego en el controlador donde estén los endpoint hay que registrar los parciales así:
+
+```
+const hbs = require('hbs')
+
+hbs.registerPartials(__dirname + '/views/partials')
+```
+
+Una vez tengamos registrados los parciales en los archivos de las vistas ya podemos utilizarlos, en el lugar del código html asi:
+
+```
+{{> header}}
+```
+
+El nombre que se ponga tiene que ser el del archivo .hbs que se quiera renderizar.
 
