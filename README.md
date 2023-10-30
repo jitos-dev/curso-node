@@ -32,3 +32,16 @@ Ahora solo tenemos que ver el README de la carpeta del proeycto para seguir los 
 ## App-tareas
 
 Esta es una aplicación de consola para registrar tareas. Esta hecha con [Inquirer](https://www.npmjs.com/package/inquirer) que nos ayuda a hacer este tipo de aplicaciones facilmente y quedan muy bien. 
+
+En la aplicación se pueden registrar tareas, ver las tareas existentes, marcarlas como completadas o no completadas...
+
+Para más información ver README del proyecto.
+
+
+## App-clima
+
+Esta es una aplicación de consola hecha con Inquirer que nos ayuda a hacer este tipo de aplicaciones facilmente. En la app se busca la ciudad y nos muestra los datos del clima a tiempo real para la ciudad seleccionada. Tiene un historial de busqueda con las últimas cinco busquedas realizadas.
+
+Para obtener los datos se hacen llamadas a dos apis externas que son **LocationIQ** y **OpenWeather** utilizando la librería **Axios** para realizar las peticiones. 
+
+Para más información ver README del proyecto.
