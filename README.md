@@ -45,3 +45,7 @@ Esta es una aplicación de consola hecha con Inquirer que nos ayuda a hacer este
 Para obtener los datos se hacen llamadas a dos apis externas que son **LocationIQ** y **OpenWeather** utilizando la librería **Axios** para realizar las peticiones. 
 
 Para más información ver README del proyecto.
+
+## Web-server
+
+Esta es una aplicación... Actualmente en desarrollo

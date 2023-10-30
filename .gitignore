@@ -5,9 +5,10 @@
 /app-clima/*
 /web-server/*
 
-# Estos archivos si se conservan
-#!**/README.md
-/*/README.md
+# Archivos que si se conservan de los proyectos
+# Solo se conservan los README de las carpetas centrales de los proyectos, el resto no
+/*/README.mdu
+!**/README.md
 
 # archivos de node
 /node_modules/
