@@ -1,13 +1,13 @@
 # APP DEL TIEMPO
 
-Esta es una app para crear un servidor http. Para ello se utiliza la librería **express** que es la más utilizada en node para este propósito. 
+Esta es una app para crear un servidor http con carga de vistas estáticas utilizando la librería **Handlebars** y la librería **express** que es la más utilizada en node para realizar las peticiones. 
 
 ## Lanzar la aplicación
 
 ```
 npm run dev
 ```
-Este comando lanza la aplicación según la definición del comando en el archivo package.json que lanza el comando:
+Este comando lanza la aplicación, en modo desarrollo, según la definición del comando en el archivo package.json que lanza el comando:
 
 ```
 npx nodemon app.js
@@ -20,6 +20,20 @@ nodemon app.js
 ```
 
 Si la tenmos instalada de forma global y de forma local podemos lanzar una u otra con los comandos anteriores.
+
+También se puede lanzar en modo producción (para cuando se despliegue en el servidor) con el comando definido en el package.json:
+
+```
+npm start
+```
+
+Este comando ejecuta el comando necesario para lanzar la app en el servidor
+
+```
+node app.js
+```
+
+De esta forma ya no se utiliza nodemon ya que no lo necesitamos en producción.
 
 ## Librerias que se utilizan en la aplicación
 * **[Nodemon](https://www.npmjs.com/package/nodemon) :** Librería utilizada para correr un servidor con detección de cambios automáticos. Cuando detecte cualquier cambio en el código recarga el servidor automáticamente con los nuevos cambios
