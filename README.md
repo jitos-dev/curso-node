@@ -48,4 +48,6 @@ Para más información ver [README](./app-clima/README.md) del proyecto.
 
 ## Web-server
 
-Esta es una aplicación... Actualmente en desarrollo
+Esta es una app para crear un servidor http con carga de vistas estáticas utilizando la librería **Handlebars** y la librería **express** que es la más utilizada en node para realizar las peticiones. 
+
+Para más información ver [README](./web-server/README.md) del proyecto.
