@@ -1,4 +1,4 @@
-# APP DEL TIEMPO
+# Web-server
 
 Esta es una app para crear un servidor http con carga de vistas estáticas utilizando la librería **Handlebars** y la librería **express** que es la más utilizada en node para realizar las peticiones. 
 
